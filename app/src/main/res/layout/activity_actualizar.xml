@@ -4,24 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ActualizarActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <ListView
-            android:id="@+id/LtsArchivos"
-            android:layout_width="match_parent"
-            android:layout_height="667dp">
-
-        </ListView>
-
-        <Button
-            android:id="@+id/btnCrear"
+        <TextView
+            android:id="@+id/lblContenido"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Crear Archivo" />
+            android:text="Contenido del Archivo" />
+
+        <EditText
+            android:id="@+id/txtContenido"
+            android:layout_width="match_parent"
+            android:layout_height="122dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btnActulizar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Actualizar Archivo" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
